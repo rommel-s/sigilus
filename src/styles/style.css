@@ -9,7 +9,8 @@
 
 body {
   display: flex;
-  padding: 10%;
+  padding: 50px;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #ffffff;
@@ -18,7 +19,12 @@ body {
 .logo {
   height: 100px;
   width: 100%;
-  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 180px;
 }
 
 .main-input {
@@ -60,6 +66,7 @@ textarea {
   background-color: #191919;
   color: #f7f7f7;
   height: 50px;
+  width: 400px;
   border-radius: 8px;
   border: none;
   font-weight: 500;

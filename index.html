@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Sigilus</title>
   </head>
   <body>
-    <div id="logo" class="logo"></div>
-    <div class="main-input">
-      <label for="phrase" id="input-label">Insira a frase</label>
-      <textarea id="phrase" type="text"></textarea>
+    <div class="logo">
+      <img
+        id="logo"
+        src="./public/assets/logo/logo-complete.svg"
+        alt="logo-complete"
+        srcset=""
+      />
     </div>
 
-    <button id="get-letters" class="main-btn">Converter</button>
+    <div class="main-input">
+      <label for="phrase" id="input-label">Insira a frase:</label>
+      <textarea type="text" id="phrase"></textarea>
+      <button id="get-letters" class="main-btn">Converter</button>
+    </div>
+
+    <div class="modal" id="letters-without-repetition">
+      <div class="modal-content">
+        <div id="show-letters"></div>
+        <button id="modal-button" class="main-btn">Ok</button>
+      </div>
+    </div>
 
     <div class="modal" id="no-letters-warning">
       <div class="modal-content">
@@ -22,7 +42,6 @@
         <button id="warning-modal-button" class="main-btn">Ok</button>
       </div>
     </div>
-
     <script src="./src/scripts/main.js"></script>
   </body>
 </html>
